@@ -1,12 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
-int doubled(int);
+void doubled(int*);
 
 int main() {
-    printf("Hallo Welt! %f \n ", sin(0));
+    int vier = 4;
+    doubled(&vier);
+
+    printf("Hallo Welt! %d \n ", vier);
 }
 
-int doubled (int a) {
-    return 2 * a;
+void doubled (int *aptr) {
+    *aptr = *aptr *  2;
+   
 }

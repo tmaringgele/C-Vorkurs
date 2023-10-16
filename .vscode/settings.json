@@ -1,3 +1,8 @@
 {
-    "cmake.sourceDirectory": "/root/TUM/GBS/C-Vorkurs"
+    "cmake.sourceDirectory": "/root/TUM/GBS/C-Vorkurs",
+    "files.associations": {
+        "stdlib.h": "c",
+        "ctype.h": "c",
+        "mein_f.h": "c"
+    }
 }
