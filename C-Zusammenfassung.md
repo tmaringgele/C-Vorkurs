@@ -140,3 +140,20 @@ void doubled (int *aptr) {
 }
 ```
 Output: ```Hallo Welt! 8 ```
+
+## Ergebnisparameter
+Hier wird zuerst ein Platzhalter für das Ergebnis reserviert und dann mit einem Seiteneffekt befüllt:
+```C
+int main() {
+    int *result = malloc(sizeof(int));
+
+    sieben(result);
+
+    printf("Hallo Welt! %i \n ", *result);
+}
+
+void sieben (int *aptr) {
+    int seven = 7;
+    *aptr = seven;
+}
+```

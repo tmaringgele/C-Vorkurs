@@ -1,16 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
-void doubled(int*);
+void sieben(int*);
 
 int main() {
-    int vier = 4;
-    doubled(&vier);
+    int *result = malloc(sizeof(int));
 
-    printf("Hallo Welt! %d \n ", vier);
+    sieben(result);
+
+    printf("Hallo Welt! %i \n ", *result);
 }
 
-void doubled (int *aptr) {
-    *aptr = *aptr *  2;
-   
+void sieben (int *aptr) {
+    int seven = 7;
+    *aptr = seven;
 }
