@@ -141,6 +141,17 @@ void doubled (int *aptr) {
 ```
 Output: ```Hallo Welt! 8 ```
 
+Anderes Beispiel:
+```C
+int main() {
+    int *pi = 3;
+
+    printf("pi: %0X \n", pi); //pi: 3
+    printf("&pi: %0X \n", &pi); //&pi: 49FCA410
+    printf("*pi: %0X \n", pi); //Fehler
+}
+```
+
 ## Ergebnisparameter
 Hier wird zuerst ein Platzhalter für das Ergebnis reserviert und dann mit einem Seiteneffekt befüllt:
 ```C

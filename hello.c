@@ -5,11 +5,11 @@
 void sieben(int*);
 
 int main() {
-    int *result = malloc(sizeof(int));
+    int *pi = 3;
 
-    sieben(result);
-
-    printf("Hallo Welt! %i \n ", *result);
+    printf("pi: %0X \n", pi);
+    printf("&pi: %0X \n", &pi);
+    printf("*pi: %i \n", *pi);
 }
 
 void sieben (int *aptr) {
